@@ -1,13 +1,13 @@
 {% set name = "Chameleon" %}
-{% set version = "4.6.0" %}
+{% set version = "4.6.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/Chameleon-{{ version }}.tar.gz
-  sha256: 910cd729f6f7f38adad132ee51faa4f3ccc8344a6721aac31aa51a31f5781c1b
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | lower }}-{{ version }}.tar.gz
+  sha256: c1775d54907966c8e397a1292b1a2755d254b7f070d0719ac9e579d9ab81e5b5
 
 build:
   noarch: python
@@ -34,7 +34,7 @@ test:
 about:
   home: https://chameleon.readthedocs.io
   summary: Fast HTML/XML Template Compiler.
-  license: BSD-4-Clause 
+  license: BSD-4-Clause
   license_family: BSD
   license_file: LICENSE.txt
 
